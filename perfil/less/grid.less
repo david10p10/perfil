@@ -1,0 +1,20 @@
+/* Grid system */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    grid-column: span 4;
+  }
+  
+  /* Responsive grid */
+  @media (max-width: 768px) {
+   .grid-container {
+      grid-template-columns: repeat(6, 1fr);
+    }
+   .grid-item {
+      grid-column: span 6;
+    }
+  }
